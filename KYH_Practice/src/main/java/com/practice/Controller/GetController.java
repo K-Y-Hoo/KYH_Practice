@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 public class GetController {
 	@GetMapping("/getParam")
-	public String getParam(@RequestParam String id, @RequestParam(name = "password") String pw) {
-		String password = "aaaa";
-		
+	public String getParam(@RequestParam String id, @RequestParam(name = "password") String pw) {		
 		System.out.println("id: " + id);
 		System.out.println("password: " + pw);
 		
